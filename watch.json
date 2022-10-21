@@ -1,0 +1,240 @@
+[
+    {
+        "type": "Smart Watch",
+        "brand": "Michael Kors",
+        "name": "Gen 4 Runway",
+        "price": "350.00",
+        "gender": "Laddies's",
+        "imgS": "Photos/BM6552-52E.jpeg"
+  },
+    {
+        "type": "Automatic Watch",
+        "brand": "CITIZEN",
+        "name": "Ceci",
+        "price": "495.00",
+        "gender": "Laddies's",
+        "imgS": "Photos/EM0796-75D/EM0796-75D_side.png",
+        "imgF": "Photos/EM0796-75D/EM0796-75D_front.png",
+        "imgB": "Photos/EM0796-75D/EM0796-75D_back.png"
+  },
+    {
+        "type": "Vintage Watch",
+        "brand": "CITIZEN",
+        "name": "Pcat",
+        "price": "675.00",
+        "gender": "Men's",
+        "imgS": "Photos/BM7334-58L.jpeg",
+        "imgB": "",
+        "imgF": ""
+  },
+    {
+        "type": "Sport",
+        "brand": "CITIZEN",
+        "name": "Promaster Dive",
+        "price": "1095.00",
+        "gender": "Men's",
+        "imgS": "Photos/BN0190-82E-Citizen-Promaster-Eco-Drive-200m-Divers-Watch-Citizen_46c13bfd-e9d6-4eda-bfd0-a162baa7032a_768x.webp",
+        "imgB": "",
+        "imgF": ""
+  },
+    {
+        "type": "Automatic Watch",
+        "brand": "CITIZEN",
+        "name": "Arezzo",
+        "price": "850.00",
+        "gender": "Laddies's",
+        "imgS": "Photos/DZ5002-52P_600x.webp",
+        "imgB": "",
+        "imgF": ""
+  },
+    {
+        "type": "Automatic Watch",
+        "brand": "CITIZEN",
+        "name": "Ciena",
+        "price": "495.00",
+        "gender": "Laddies's",
+        "imgS": "Photos/EM0192-57A/EM0192-57A_side.png",
+        "imgF": "Photos/EM0192-57A/EM0192-57A_front.png",
+        "imgB": "Photos/EM0192-57A/EM0192-57A_back.png"
+  },
+    {
+        "type": "Luxury Watch",
+        "brand": "ROLEX",
+        "name": "Datejust 36",
+        "price": "12,500.00",
+        "gender": "Laddies's",
+        "imgS": "Photos/m116500ln-0002_modelpage_front_facing_landscape.png",
+        "imgF": "",
+        "imgB": ""
+  },
+    {
+        "type": "Luxury Watch/Sport Watch",
+        "brand": "ROLEX",
+        "name": "Submariner Gold Edition",
+        "price": "47500.00",
+        "gender": "Men's",
+        "imgS": "Photos/m126613lb-0002.webp",
+        "imgF": "",
+        "imgB": ""
+  },
+    {
+        "type": "Luxury Watch",
+        "brand": "ROLEX",
+        "name": "Submariner",
+        "price": "19495.00",
+        "gender": "Men's",
+        "imgS": "Photos/116613BLSO/116613BLSO_side.png",
+        "imgF": "Photos/116613BLSO/116613BLSO_front.png",
+        "imgB": "Photos/116613BLSO/116613BLSO_back.png"
+  },
+    {
+        "type": "Luxury Watch",
+        "brand": "ROLEX",
+        "name": "Lady-Datejust",
+        "price": "17,750.00",
+        "gender": "Laddies's",
+        "imgS": "Photos/RLX279381OGDJ/RLX279381OGDJ_side.png",
+        "imgB": "Photos/RLX279381OGDJ/RLX279381OGDJ_back.png",
+        "imgF": "Photos/RLX279381OGDJ/RLX279381OGDJ_front.png"
+  },
+    {
+        "type": "Luxury Watch",
+        "brand": "ROLEX",
+        "name": "Datejust",
+        "price": "8,803.99",
+        "gender": "Laddies's",
+        "imgS": "Photos/69173CDJ/69173CDJ_side.png",
+        "imgB": "Photos/69173CDJ/69173CDJ_back.png",
+        "imgF": "Photos/69173CDJ/69173CDJ_front.png"
+  },
+    {
+        "type": "Luxury Watch",
+        "brand": "ROLEX",
+        "name": "GMT-Master II",
+        "price": "48,950.00",
+        "gender": "Men's",
+        "imgS": "Photos/126715CHNR-0001/126715CHNR-0001_side.png",
+        "imgB": "Photos/126715CHNR-0001/126715CHNR-0001_back.png",
+        "imgF": "Photos/126715CHNR-0001/126715CHNR-0001_front.png"
+  },
+    {
+        "type": "Luxury Watch",
+        "brand": "ROLEX",
+        "name": "Cosmograph Daytona",
+        "price": "52,500.00",
+        "gender": "Men's",
+        "imgS": "Photos/116519BKDR/116519BKDR_side.png",
+        "imgB": "Photos/116519BKDR/116519BKDR_back.png",
+        "imgF": "Photos/116519BKDR/116519BKDR_front.png"
+  },
+    {
+        "type": "Vintage Watch",
+        "brand": "MOVADO",
+        "name": "Heritage",
+        "price": "1,995.00",
+        "gender": "Men's",
+        "imgS": "Photos/3650112/3650112_side.png",
+        "imgF": "Photos/3650112/3650112_front.png",
+        "imgB": "Photos/3650112/3650112_back.png"
+  },
+    {
+        "type": "Smart/Sport Watch",
+        "brand": "Hublot",
+        "name": "Big-Bang-Integral-SkyBlue Ceramic",
+        "price": "5,200.00",
+        "gender": "Men's",
+        "imgS": "Photos/Big-Bang-Integral-Sky-Blue-Ceramic-42-mm-soldier-shot_front.png",
+        "imgF": "",
+        "imgB": ""
+  },
+    {
+        "type": "Luxury Watch",
+        "brand": "Hublot",
+        "name": "Spirit of Big Bang",
+        "price": "46,200.00",
+        "gender": "Men's",
+        "imgS": "Photos/Big-Bang-unico-king-gold-ceramic-44-mm-soldier-shot.png",
+        "imgF": "",
+        "imgB": ""
+  },
+    {
+        "type": "Sport Watch",
+        "brand": "Hublot",
+        "name": "Big Bang",
+        "price": "30,900.00",
+        "gender": "Men's",
+        "imgS": "Photos/Classic-Fusion-Titanium-on-Rubber-45-mm.png",
+        "imgF": "",
+        "imgB": ""
+  },
+    {
+        "type": "Sport Watch",
+        "brand": "Hublot",
+        "name": "Big Bang Meca-10",
+        "price": "22,000.00",
+        "gender": "Men's",
+        "imgS": "Photos/414.NI.1123.RX/414.NI.1123.RX_side.png",
+        "imgF": "Photos/414.NI.1123.RX/414.NI.1123.RX_front.png",
+        "imgB": "Photos/414.NI.1123.RX/414.NI.1123.RX_back.png"
+  },
+    {
+        "type": "Casual Watch",
+        "brand": "Hublot",
+        "name": "Classic Fusion Chronograph",
+        "price": "30,400.00",
+        "gender": "Men's",
+        "imgS": "Photos/521.OX.1180.RX/521.OX.1180.RX_side.png",
+        "imgF": "Photos/521.OX.1180.RX/521.OX.1180.RX_front.png",
+        "imgB": "Photos/521.OX.1180.RX/521.OX.1180.RX_back.png"
+  },
+    {
+        "type": "Casual Watch",
+        "brand": "Hublot",
+        "name": "King Power Unico",
+        "price": "23,300.00",
+        "gender": "Men's",
+        "imgS": "Photos/701.NE.0127.GR/701.NE.0127.GR_side.png",
+        "imgF": "Photos/701.NE.0127.GR/701.NE.0127.GR_front.png",
+        "imgB": "Photos/701.NE.0127.GR/701.NE.0127.GR_back.png"
+  },
+    {
+        "type": "Smart",
+        "brand": "Apple",
+        "name": "iWatch",
+        "price": "1,000",
+        "gender": "Men's",
+        "imgS": "Photos/MQE23ref_VW_34FR+watch-49-titanium-ultra_VW_34FR_WF_CO+watch-face-49-alpine-ultra_VW_34FR_WF_CO_GEO_AE.jpeg",
+        "imgF": "",
+        "imgB": ""
+  },
+    {
+        "type": "Smart",
+        "brand": "Apple",
+        "name": "iWatch Pink",
+        "price": "1,000",
+        "gender": "Men's",
+        "imgS": "Photos/FQKW2.jpeg",
+        "imgF": "",
+        "imgB": ""
+  },
+    {
+        "type": "Smart",
+        "brand": "",
+        "name": "King Power Unico",
+        "price": "23,300.00",
+        "gender": "Men's",
+        "imgS": "Photos/701.NE.0127.GR/701.NE.0127.GR_side.png",
+        "imgF": "Photos/701.NE.0127.GR/701.NE.0127.GR_front.png",
+        "imgB": "Photos/701.NE.0127.GR/701.NE.0127.GR_back.png"
+  },
+    {
+        "type": "Casual/Sport Watch",
+        "brand": "Omega",
+        "name": "Seamaster Aqua",
+        "price": "5,900.00",
+        "gender": "Men's",
+        "imgS": "Photos/index-50-1627413665.jpeg",
+        "imgF": "",
+        "imgB": ""
+  }
+]

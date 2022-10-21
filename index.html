@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alberto</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="indexController.js" defer></script>
+
+    <!-- date-time -->
+    <script>
+        `use strict`;
+
+        function refreshTime() {
+            const timeDisplay = document.getElementById("time");
+            const dateString = new Date().toLocaleString();
+            const formattedString = dateString.replace(", ", " - ");
+            timeDisplay.textContent = formattedString;
+        }
+        setInterval(refreshTime, 1000);
+    </script>
+
+    <!-- geolocation -->
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showposition);
+            } else {
+                alert("geolocation is not supported in this browser.");
+            }
+        }
+
+        function showPosition(position) {
+            alert('Latitude: ' + position.coords.latitude + '\n' + 'Longitude:' + position.coords.longitude);
+        }
+    </script>
+
+    <!-- website visitor counter -->
+    <script defer src="index.js"></script>
+
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  
+
+
+
+</head>
+
+<!--<body ng-app="myApp" ng-controller="MyController">-->
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" ng-app="myApp" ng-controller="MyController">
+
+    <!-- Navigation bar -->
+
+    <header>
+        <div class="alberto__navBar" id="navbar">
+            <div class="alberto__navBar-links">
+                <div class="data-dropdown" data-dropdown>
+                    <li><a href="#/!" data-dropdown-link>HOME</a></li>
+                    <div class="alberto__navBar-links__dropdown">
+                        <div>
+                            <a href="" ng-click="gotoCitizenCollection()">NEW ARRIVAL</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-dropdown" data-dropdown>
+                    <li><a href="#!about" data-dropdown-link>ABOUT</a></li>
+                    <div class="alberto__navBar-links__dropdown">
+                        <div>
+                            <a href="history.html">The Alberto Brand</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-dropdown" data-dropdown>
+                    <li><a data-dropdown-link>SERVICE</a></li>
+                    <div class="alberto__navBar-links__dropdown">
+                        <div>
+                            <a href="#">REPAIR</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-dropdown" data-dropdown>
+                    <li><a href="#!shop" data-dropdown-link>SHOP</a></li>
+                    <div class="alberto__navBar-links__dropdown">
+
+                        <div class="data-dropdown_shop" shop-dropdown>
+                            <a shop-dropdown-link>BRANDS</a>
+                            <div class="data-dropdown_shop-link">
+                               <a ng-click="OpenWatch('APPLE')">APPLE</a>
+                                <a ng-click="OpenWatch('OMEGA')">OMEGA</a>
+                                <a ng-click="OpenWatch('HUBLOT')">HUBLOT</a>
+                                <a ng-click="OpenWatch('CITIZEN')">CITIZEN</a>
+                                <a ng-click="OpenWatch('ROLEX')">ROLEX</a>
+                                <div class="data-dropdown_shop-link-overlay"></div>
+                            </div>
+                        </div>
+                        <div class="data-dropdown_shop" shop-dropdown>
+                            <a shop-dropdown-link>STYLE</a>
+                            <div class="data-dropdown_shop-link">
+                                <a ng-click="OpenWatch('SMART')">Smart</a>
+                                <a ng-click="OpenWatch('DIGITAL')">Vintage</a>
+                                <a ng-click="OpenWatch('DIGITAL')">Clock</a>
+
+                                <div class="data-dropdown_shop-link-overlay"></div>
+                            </div>
+                        </div>
+                        <div class="data-dropdown_shop" shop-dropdown>
+                            <a shop-dropdown-link>LUXURY</a>
+                            <div class="data-dropdown_shop-link">
+                                <a ng-click="OpenWatch('CITIZEN')">CITIZEN</a>
+                                <a ng-click="OpenWatch('ROLEX')">ROLEX</a>
+                                <div class="data-dropdown_shop-link-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <li><a href="#gallery">GALLERY</a></li>
+                </div>
+                <div>
+                    <li><a href="#contact-us">CONTACT US</a></li>
+                </div>
+                
+
+            </div>
+
+
+            <!-- mobile menu -->
+            <div id="menu-icon" class="menu-icon" ng-click="MobileMenu()">
+                <i class="bx bx-menu"></i>
+            </div>
+            <div class="m-navbar" id="m-navbar">
+                <div class="m-close-button" ng-click="CloseMenuMobile()">
+                    <i class="bx bx-x"></i>
+                </div>
+                <div m-dropdown class="m-navbar-link">
+                    <div class="pri-link">
+                        <a href="">HOME</a>
+                        <i m-dropdown-arrow class="bx bxs-chevron-down"></i>
+                    </div>
+                    <div class="snd-links">
+                        <a href="" ng-click="gotoCitizenCollection()">NEW ARRIVALS</a>
+                    </div>
+                </div>
+                <div m-dropdown class="m-navbar-link">
+                    <div class="pri-link">
+                        <a href="#!about">ABOUT</a>
+                        <i m-dropdown-arrow class="bx bxs-chevron-down"></i>
+                    </div>
+                    <div class="snd-links">
+                        <a href="" ng-click="GotoBlog()">OUR HISTORY</a>
+                    </div>
+                </div>
+                <div m-dropdown class="m-navbar-link">
+                    <div class="pri-link">
+                        <a href="">SERVICES</a>
+                        <i m-dropdown-arrow class="bx bxs-chevron-down"></i>
+                    </div>
+                    <div class="snd-links">
+                        <a href="#!repair">REPAIR</a>
+                    </div>
+                </div>
+                <div m-dropdown class="m-navbar-link">
+                    <div class="pri-link">
+                        <a href="#!shop">PRODUCTS</a>
+                        <i m-dropdown-arrow class="bx bxs-chevron-down"></i>
+                    </div>
+                    <div class="snd-links">
+                        <div m-snd-dropdown class="mobile-dropdown">
+                            <div class="m-shop-pri-link">
+                                <a href="#">STYLE</a>
+                                <i m-snd-btn class="bx bxs-chevron-down"></i>
+                            </div>
+                            <div class="mobile-dropdown-link">
+                                <a ng-click="OpenWatch('SMART')">SMART</a>
+                                <a ng-click="OpenWatch('DIGITAL')">DIGITAL</a>
+                            </div>
+                        </div>
+                        <div m-snd-dropdown class="mobile-dropdown">
+                            <div class="m-shop-pri-link">
+                                <a href="#">BRANDS</a>
+                                <i m-snd-btn class="bx bxs-chevron-down"></i>
+                            </div>
+                            <div class="mobile-dropdown-link">
+                                <a ng-click="OpenWatch('OMEGA')">APPLE</a>
+                                <a ng-click="OpenWatch('OMEGA')">OMEGA</a>
+                                <a ng-click="OpenWatch('HUBLOT')">HUBLOT</a>
+                                <a ng-click="OpenWatch('CITIZEN')">CITIZEN</a>
+                                <a ng-click="OpenWatch('ROLEX')">ROLEX</a>
+                                <a ng-click="OpenWatch('OMEGA')">OTHERS</a>
+                            </div>
+                        </div>
+                        <div m-snd-dropdown class="mobile-dropdown">
+                            <div class="m-shop-pri-link">
+                                <a href="#">LUXURY</a>
+                                <i m-snd-btn class="bx bxs-chevron-down"></i>
+                            </div>
+                            <div class="mobile-dropdown-link">
+                                <a ng-click="OpenWatch('CITIZEN')">CITIZEN</a>
+                                <a ng-click="OpenWatch('ROLEX')">ROLEX</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-navbar-link">
+                    <div class="pri-link">
+                        <a href="#contact-us">CONTACT</a>
+                    </div>
+                </div>
+                <div id="m-card" class="m-navbar-link">
+                    <div class="pri-link">
+                        <a>CARD</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- navbar account -->
+            <div class="alberto_navBar-account">
+                
+                <div class="alberto_navBar-logo">
+                    <a href="#/!" class="split">Alberto</a>
+                </div>
+                <!-- visit counter. Refresh to update-->
+                <a href="#" class="countsplit">Website visitors so far: </a>
+
+                <a href="#" class="split">
+                    <div class="website-counter"></div>
+                </a>
+
+                <div class="alberto__navBar-cart">
+                    <a href="#!check-out">CART ({{carts.length}})</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div ng-view></div>
+    
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+        <div class="bestsellers_collection-heading">
+      <h2>Our Clock and Watch <span> gallery </span></h2>
+    </div>
+
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="Photos/BM6552-52E.jpeg" alt="">
+                <div class="content">
+                    <h3></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Photos/Big-Bang-unico-king-gold-ceramic-44-mm-soldier-shot.png" alt="">
+                <div class="content">
+                    <h3></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Photos/OM795-3x4-No-WM_7-b.jpeg" alt="">
+                <div class="content">
+                    <h3></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="#" class="btn">ordern now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Photos/index-50-1627413665.jpeg" alt="">
+                <div class="content">
+                    <h3></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Photos/BN0190-82E-Citizen-Promaster-Eco-Drive-200m-Divers-Watch-Citizen_46c13bfd-e9d6-4eda-bfd0-a162baa7032a_768x.webp" alt="">
+                <div class="content">
+                    <h3></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Photos/julian-hochgesang-SRXx3jFexHw-unsplash.jpg" alt="">
+                <div class="content">
+                    <h3></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Photos/nick-george-gzqmo6p8h8o-unsplash.jpg" alt="">
+                <div class="content">
+                    <h3></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Photos/paul-cuoco-CO2vOhPqlrM-unsplash.jpg" alt="">
+                <div class="content">
+                    <h3></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Photos/61gscZYmaoL._SL1377_.jpg" alt="">
+                <div class="content">
+                    <h3></h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- gallery section ends -->
+
+
+    <!-- Contact Us -->
+    
+    <div class="contact-us">
+    <div class="bestsellers_collection-heading">
+        <h2>Contact <span> Us </span></h2>
+    </div>
+    <div class="container" id="contact-us">
+    
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Victoria Island</div>
+          <div class="text-two">Nigeria</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+2341 2345 6789</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">example@gmail.com</div>
+          <div class="text-two">info.example@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>For any type of quries related to our brand, you can send us a message from here. We're happy to assist.</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+          
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  </div>
+
+
+    <footer class="section__padding" id="footer">
+        <!-- Continuous Scrolling Ticker -->
+
+        <marquee width="70%" direction="left" height="30px">
+            <p>Current date and Time is <span id="time"></span><input type="button" value="Display Location" onclick="getLocation()"></p>
+        </marquee>
+        <div class="alberto-contact">
+            <div class="contact-subscribe">
+                <h3>
+                    Sign up for our newsletter to receive special offers, news and great
+                    sales notifications.
+                </h3>
+                <form action="#">
+                    <div class="contact-form" class="div">
+                        <input type="text" placeholder="Enter your email address" required />
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-data">
+                <div class="contact-links">
+                    <h3>LINK</h3>
+                    <a href="#/!">HOME</a>
+                    <a href="history.html">ABOUT US</a>
+                    <a href="#!shop">SHOP</a>
+                    <a href="#">SERVICE</a>
+                </div>
+                
+                <div class="contact-links">
+                    <h3>SOCIALS</h3>
+                    <a href="#">INSTAGRAM</a>
+                    <a href="#">PINTEREST</a>
+                    <a href="#">FACEBOOK</a>
+                    <a href="#">INSTAGRAM</a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <div id="scroll-top" ng-click="scrollTop()" class="move-to-top">
+        <i class="bx bx-chevron-up"></i>
+    </div>
+</body></html>
