@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+	<loc>https://alberto-clocks-group01.netlify.app/</loc>
+	<lastmod>2022-10-21T14:51:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://alberto-clocks-group01.netlify.app/#!about</loc>
+	<lastmod>2022-10-21T14:51:47+01:00</lastmod>
+	<priority>1.0</priority>
+	<image:image>
+			<image:loc>https://alberto-clocks-group01.netlify.app/Photos/BM6552-52E.jpeg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://alberto-clocks-group01.netlify.app/Photos/Big-Bang-unico-king-gold-ceramic-44-mm-soldier-shot.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://alberto-clocks-group01.netlify.app/Photos/OM795-3x4-No-WM_7-b.jpeg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://alberto-clocks-group01.netlify.app/Photos/index-50-1627413665.jpeg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://alberto-clocks-group01.netlify.app/Photos/BN0190-82E-Citizen-Promaster-Eco-Drive-200m-Divers-Watch-Citizen_46c13bfd-e9d6-4eda-bfd0-a162baa7032a_768x.webp</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://alberto-clocks-group01.netlify.app/Photos/julian-hochgesang-SRXx3jFexHw-unsplash.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://alberto-clocks-group01.netlify.app/Photos/nick-george-gzqmo6p8h8o-unsplash.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://alberto-clocks-group01.netlify.app/Photos/paul-cuoco-CO2vOhPqlrM-unsplash.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://alberto-clocks-group01.netlify.app/Photos/61gscZYmaoL._SL1377_.jpg</image:loc>
+	</image:image>
+</url>
+<url>
+	<loc>https://alberto-clocks-group01.netlify.app/history.html</loc>
+	<lastmod>2022-10-21T14:51:47+01:00</lastmod>
+	<priority>1.0</priority>
+	<image:image>
+			<image:loc>https://alberto-clocks-group01.netlify.app/Photos/carlos-esteves-Ae3OHpJfngc-unsplash.jpg</image:loc>
+	</image:image>
+</url>
+<url>
+	<loc>https://alberto-clocks-group01.netlify.app/#!shop</loc>
+	<lastmod>2022-10-21T14:51:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://alberto-clocks-group01.netlify.app/#!repair</loc>
+	<lastmod>2022-10-21T14:51:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://alberto-clocks-group01.netlify.app/#!check-out</loc>
+	<lastmod>2022-10-21T14:51:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>
